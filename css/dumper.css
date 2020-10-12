@@ -1,0 +1,63 @@
+:root{
+    --darkcolor: rgb(0,0,0);
+    --lightcolor: rgb(255, 136, 0);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    background-color: var(--lightcolor);
+    opacity: 0;
+    animation-name: hello;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.pchead{
+    background-color: var(--darkcolor);
+    font-size: 1.3rem;
+    color: whitesmoke;
+    width: 75%;
+    margin: 0 auto;
+    padding: 3rem;
+    clip-path: polygon(0 0, 100% 0%, 84% 100%, 0% 100%);
+}
+.pc1{
+    width: 24rem;
+    height: 24rem;
+
+}
+.about{
+    font-size: 2rem;
+    text-align: center;
+    background-image: radial-gradient(red, orange)
+}
+@keyframes hello{
+    0%{opacity: 0;}
+    100%{opacity: 100%;}
+}
+.deal{
+    text-align: center;
+    font-size: 2.5rem;
+}
+.excpc{
+    font-size: 2rem;
+}
+.specs{
+    text-align: center;
+}
+.info{
+    margin:3rem;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 2rem;
+    animation-name: grad;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes grad{
+    0%{background-image: radial-gradient(orange, red)}
+    100%{background-image: radial-gradient(red,orange)}
+}
