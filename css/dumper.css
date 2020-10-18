@@ -9,10 +9,6 @@
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
     background-color: var(--lightcolor);
-    opacity: 0;
-    animation-name: hello;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
 }
 .pchead{
     background-color: var(--darkcolor);
@@ -32,10 +28,6 @@
     font-size: 2rem;
     text-align: center;
     background-image: radial-gradient(red, orange)
-}
-@keyframes hello{
-    0%{opacity: 0;}
-    100%{opacity: 100%;}
 }
 .deal{
     text-align: center;
@@ -60,4 +52,31 @@
 @keyframes grad{
     0%{background-image: radial-gradient(orange, red)}
     100%{background-image: radial-gradient(red,orange)}
+}
+.pcbuild{
+    float: right;
+}
+.order{
+    margin-top: 2rem;
+    align-items: center;
+    text-align: center;
+}
+.orderbtn{
+    text-decoration: none;
+    font-size: 3rem;
+    background-image: radial-gradient(red,orange);
+    border-width: 8px;
+    border-color: red;
+    transition: 0.5s;
+    margin-top: 8px;
+    
+
+}
+.orderbtn:hover{
+    font-size: 3.5rem;
+    animation-name: appear;
+    animation-duration: 2s;
+}
+@keyframes appear{
+    100%{transform:rotate(360deg);}
 }
